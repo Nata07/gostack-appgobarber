@@ -13,7 +13,7 @@ import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Feather';
 import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
-import api from 'src/services/api';
+import api from '../../services/api';
 import getValidationErrors from '../../utils/getValidationsErrors';
 import { Container, Title, BackToSignIn, BackToSignInText } from './styles';
 import Input from '../../components/Input';
