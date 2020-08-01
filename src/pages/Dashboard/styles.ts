@@ -59,7 +59,7 @@ export const ProvidersListTitle = styled.Text`
   font-size: 24px;
   margin-bottom: 24px;
   color: #f4ede8;
-  font-family: 'RobotoSlab-Medium'
+  font-family: 'RobotoSlab-Medium';
 `;
 
 export const ProviderInfo = styled.View`
@@ -82,7 +82,5 @@ export const ProviderMeta = styled.View`
 export const ProviderMetaText = styled.Text`
   margin-left: 8px;
   color: #999591;
-  font-family: 'RobotoSlab-Regular'
+  font-family: 'RobotoSlab-Regular';
 `;
-
-
