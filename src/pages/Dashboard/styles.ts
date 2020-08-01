@@ -1,17 +1,19 @@
-import styled from "styled-components/native";
-import {Provider} from './index';
-import {FlatList} from 'react-native'
-import { RectButton } from "react-native-gesture-handler";
+import styled from 'styled-components/native';
+import { FlatList } from 'react-native';
+import { RectButton } from 'react-native-gesture-handler';
+import { getStatusBarHeight } from 'react-native-iphone-x-helper';
+import { Provider } from './index';
+
 export const Container = styled.View`
   flex: 1;
 `;
 export const Header = styled.View`
   padding: 24px;
   background: #28262e;
-
+  padding-top: ${getStatusBarHeight() + 24}px;
   flex-direction: row;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
 `;
 export const HeaderTitle = styled.Text`
   color: #f4ede8;
@@ -33,9 +35,7 @@ export const UserAvatar = styled.Image`
   background: #ff9000;
 `;
 
-export const ProvidersList = styled(
-  FlatList as new () => FlatList<Provider>
-)`
+export const ProvidersList = styled(FlatList as new () => FlatList<Provider>)`
   padding: 32px 24px 16px;
 `;
 
